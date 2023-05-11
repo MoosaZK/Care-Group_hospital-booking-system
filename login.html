@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+    
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+</head>
+<body style="background-image: url(loginbackground.png); background-size: cover;">
+	<nav class="navbar py-3  navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid mx-5">
+          <a class="navbar-brand" href="./index.html">
+            Care Group 
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link border border-2 rounded px-3 mx-2" href="/WE_assg2/login.html">Login</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link  border border-2 rounded px-3 mx-2" href="/WE_assg2/patient/register.html">Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    <div class="container d-flex flex-column justify-content-center align-items-center" style="height: fit-content;">
+    
+    <h2 class="my-5">Login</h2>
+	<form action="login.php" method="POST" class="m-5 d-flex flex-column justify-content-center align-items-center">
+		<label for="username" class="form-label">Username:</label>
+		<input type="text"  class="form-control" id="username" name="username" required><br>
+		
+		<label for="password" class="form-label">Password:</label>
+		<input type="password" id="password" class="form-control" name="password" required><br>
+		
+		<label for="role" class="form-label">Role:</label>
+		<select name="role" class="form-select" required>
+			<option value="doctor">Doctor</option>
+			<option value="patient">Patient</option>
+			<option value="admin">Admin</option>
+		</select><br><br>
+		<input type="submit" class="btn btn-primary" value="Login">
+        
+	</form>
+</div>
+</body>
+</html>

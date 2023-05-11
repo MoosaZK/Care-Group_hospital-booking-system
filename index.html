@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+      <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<style>
+    body{
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ),  url(./homepage.jpg);
+    background-size: cover;
+}
+.container{
+    height: 100vh;
+}
+
+</style>
+</head>
+<body >
+    <nav class="navbar py-3  navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid mx-5">
+          <a class="navbar-brand" href="/login.html">
+            Care Group 
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link border border-2 rounded px-3 mx-2" href="./login.html">Login</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link border border-2 rounded px-3 mx-2" href="patient/register.html">Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container d-flex flex-column justify-content-center" >
+        <div class="content text-light">
+            <h1>CARE Group</h1>
+            <p>We all need to visit doctors some time or the other.  Sometimes it is an emergency <br>
+                situation, whereas most of the other times it is a  planned checkup/visit. <br> But in both
+                cases we have to visit the doctor to make an <br> appointment or wait in long queues.</p>
+        </div>
+        <div class="buttons">
+            <a href="./login.html" class="btn btn-primary px-4 py-2">Login</a>
+            <a href="./patient/register.html" class="btn btn-primary mx-2 px-4 py-2">Register</a>
+        </div>
+    </div>
+</body>
+</html>
